@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's What's for Dinner</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="mainPage">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="index.html">What's for Dinner?</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="top-banner">
+      <br>
+        <div class="container">
+            <h1 class="display-3">What's for Dinner</h1>
+            <br>
+    </section>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col" id="theMeal">
+                <h2>The Meal</h2>
+
+
+                <form>
+                    <div>
+                        <select name="selectMeal" id="selectMeal"></select>
+                    </div>
+                    <div>
+                        <button id="mealButton" type="button" class="btn btn-dark btn-lg">Generate Your Meal</button>
+                    </div>
+                </form>
+                <div id="mealName"></div>
+
+                <div class="square">
+                    <img id="mealImage" src="/images/food.png" alt="meal image">
+
+                </div>
+            </div>
+
+
+
+
+            <div class="col" id="theDrink">
+                <h2>The Drink</h2>
+
+                <form>
+                    <div>
+                        <select name="selectDrink" id="selectDrink"></select>
+                    </div>
+                    <div>
+                        <button id="drinkButton" type="button" class="btn btn-dark btn-lg">Generate Your Drink</button>
+                    </div>
+
+                </form>
+                <div id="drinkName"></div>
+                <div class="square">
+                    <img id="drinkImage" src="/images/cocktail.png" alt="drink image">
+                </div>
+            </div>
+        </div>
+
+    <!-- buttons on bottom -->
+        <div class="row bottom">
+            <div id="randomSelection" class="col">
+
+                <h3>Can't Decide?</h3>
+                <button id="randomButton" type="button" class="btn btn-dark btn-lg">
+                    Surprise Me!
+                </button>
+    
+            </div>
+    
+            <div id="satisfiedSelection" class="col">
+    
+                <h3>Satisfied With the Selection?</h3>
+    
+                <form action="recipe.html">
+    
+                    <button id="recipeButton" type="submit" class="btn btn-dark btn-lg" disabled>
+                        Learn How to Make it!
+                    </button>
+    
+                </form>
+    
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+
+</html>
